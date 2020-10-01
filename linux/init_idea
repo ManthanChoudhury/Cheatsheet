@@ -1,0 +1,8 @@
+All Linux machines have seven runlevels, which are responsible for managing certain system actions and behaviors. On a classical SystemV installation, each runlevel would be part of the boot procedure:
+
+Runlevel 0 (Machine off)
+Runlevel 1 (Singleuser / Diagnostics Mode)
+Runlevels 2-4 (Bootup and service start)
+Runlevel 5 (Fully booted system, all services online)
+Runlevel 6 (Going down for restart)
+The init (and telinit) commands allow you to specify what runlevel to move init and the system to.
