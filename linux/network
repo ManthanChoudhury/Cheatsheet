@@ -1,13 +1,13 @@
 how to read packets:
 
-# tcpdump -i enp0s3 -n
+-> tcpdump -i enp0s3 -n
 
 to read packet
 
-# tcpdump -i enp0s3 -n -X
+-> tcpdump -i enp0s3 -n -X
 
 to read data inside packet 
 
-# tcpdump -i enp0s3 tcp port 22 -n -X
+-> tcpdump -i enp0s3 tcp port 22 -n -X
 
 to filter ip
