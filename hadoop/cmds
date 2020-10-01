@@ -1,1 +1,24 @@
-need tym
+
+-> jps
+
+to check active process and master and name node 
+
+
+->cd/etc/hadoop
+
+-> hadoop-daemon.sh start namenode
+
+-> hadoop-daemon.sh start datanode
+
+-> hadoop dfsadmin  -report
+
+**to get more ram or free up ram or to clean cache memory**
+
+-> echo 3 > /proc/sys/rm/drop-caches
+
+read
+-> hadoop fs -ls /
+
+upload
+-> hadoop fs -put zzzz.txt /
+
