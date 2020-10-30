@@ -2,7 +2,10 @@ for help
 -> docker -help
 
 to start docker
-->systemctl enable/start docker
+->systemctl start docker
+
+to make docker permanent means whenever os we don't need to start docker again 
+->systemctl enable docker
 
 to get the information of installed docker and version
 ->docker info
