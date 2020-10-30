@@ -70,7 +70,7 @@ docker rm -f $(docker ps -a -q)
 -i interactive 
 -t terminal
 -d background
-
+-p port
 
 
 
