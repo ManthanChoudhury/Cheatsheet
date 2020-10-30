@@ -1,8 +1,26 @@
-# installion of docker in RHEL 8
+# installion of docker in RHEL 8 proceeding with community edition 
 
 create repo for installation
-
 vim /etc/yum.repos.d/docker.repo
+
+
+make download able link to download software  and bypass digital signature 
+->
+[docker]
+name=Software from docker
+baseurl=https://download.docker.com/linux/centos/7/x86_64/stable/
+gpgcheck=0
+
+to confirm repo is created or not check 
+-> yum repolist 
+
+to install 
+-> yum install docker-ce --nobest -y
+
+now its ready
+
+to check docker is installed or not 
+->rpm -q docker-ce
 
 
 
