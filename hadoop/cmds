@@ -5,20 +5,24 @@ to check active process and master and name node
 
 
 ->cd/etc/hadoop
+to go inside hadoop setup file
 
 -> hadoop-daemon.sh start namenode
+to start master 
 
 -> hadoop-daemon.sh start datanode
+to start slave
 
 -> hadoop dfsadmin  -report
+to get report of connected node
 
 **to get more ram or free up ram or to clean cache memory**
 
 -> echo 3 > /proc/sys/rm/drop-caches
 
-read
+read file
 -> hadoop fs -ls /
 
-upload
+upload file
 -> hadoop fs -put zzzz.txt /
 
