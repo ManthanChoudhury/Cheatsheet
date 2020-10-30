@@ -1,0 +1,8 @@
+# installion of docker in RHEL 8
+
+create repo for installation
+
+vim /etc/yum.repos.d/docker.repo
+
+
+
