@@ -1,1 +1,76 @@
+for help
+-> docker -help
+
+to start docker
+->systemctl enable/start docker
+
+to get the information of installed docker and version
+->docker info
+
+to download image 
+->docker pull (image name : version) ubuntu:14:04
+
+download the latest version if not any provide (by default)
+->docker pull centos 
+
+to check list of images we have 
+->docker images 
+
+we can create multiple OS using 1 image  
+-to run image 
+->docker run -i -t --name myos centos
+-to run image in background
+->docker run -dit --name myos centos
+-to run image in background and with port no
+->docker run -dit -p 8089:80 --name myos centos
+
+-to run single command 
+->docker run -it --name myos centos:7 date
+it will show just date thats solve
+
+to get out of docker image that is currently running
+->exit
+
+to stop os
+->docker stop(name of os / tag)
+
+to check current os running or dead 
+->docker ps
+
+to check all os running or dead
+-> docker ps -a
+
+we can run os now and if we need we can attach later
+before attaching we always need to start remember
+->docker start (tag of os/ numerical value)
+->docker attach (tag of os/ numerical value)
+
+to inspect os 
+->docker insepct (name of os)
+
+to remove os forcefully
+->docker rm -f (name of os)
+
+to remove image 
+->docker rmi -f (name of image)
+
+
+to remove all os in once
+alias helps to create nickname or shortcut of command 
+->alias d='docker rm `docker ps -a -q`'
+now just type thats solve 
+d
+
+or
+
+but for one use only
+docker rm -f $(docker ps -a -q)
+
+
+-i interactive 
+-t terminal
+-d background
+
+
+
 
