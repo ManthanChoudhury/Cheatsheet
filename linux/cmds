@@ -1,1 +1,12 @@
-i will
+to check free ram 
+free -m
+
+to check ram status in every one sec 
+watch -n 1 free -m
+
+to create folder 
+mkdir zzzz
+
+to create txt file 
+cat > soul.txt
+
